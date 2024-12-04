@@ -54,7 +54,7 @@ const FirstPage = () => {
 
         const filterData = mydata.filter((e) => e.userName === userName
             && e.userPassword === userPassword);
-        filterData.length ? navigate(`/${filterData[0].id}`)
+        filterData.length ? navigate(`/${filterData[0].userName}`)
             : alert("isdifadeçi tapılmadı kışh kışh")
     }
 

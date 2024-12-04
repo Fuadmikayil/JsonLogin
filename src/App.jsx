@@ -6,10 +6,9 @@ import User from "./User/user";
 function App() {
   return (
     <section>
-      <FirstPage />
       <Routes>
-        <Route path="/" elemen={<FirstPage />} />
-        <Route path="/:user" elemen={<User />} />
+        <Route path="/" element={<FirstPage />} />
+        <Route path="/:user" element={<User />} />
       </Routes>
     </section>
   );

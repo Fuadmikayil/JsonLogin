@@ -1,0 +1,83 @@
+.first-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.first-page>div {
+    display: flex;
+    gap: 30px;
+}
+
+.first-page>div>button {
+    color: white;
+    background-color: rgb(20, 90, 155);
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.first-page>div>button:hover {
+    background-color: rgb(44, 128, 207);
+}
+
+.sign-up {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.sign-up>form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgb(233, 233, 233);
+}
+
+.sign-up>form>input {
+    padding: 10px;
+    width: 300px;
+    border-bottom: 1px solid rgb(20, 90, 155);
+}
+
+.sign-up>form>input[type="button"] {
+    background-color: rgb(20, 90, 155);
+    color: white;
+    font-weight: 600;
+    padding: 13px 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.sign-up>.close-sign-up {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 2.5rem;
+    color: rgb(20, 90, 155);
+    cursor: pointer;
+}
+
+.alert-teg {
+    z-index: 1000;
+    background-color: rgb(20, 90, 155);
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}

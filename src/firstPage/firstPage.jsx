@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './firstPage.css'
 import { IoCloseCircle } from "react-icons/io5";
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 const FirstPage = () => {
@@ -43,6 +44,7 @@ const FirstPage = () => {
     const signIn = () => {
         setSignInOpen(true)
     }
+    const navigate = useNavigate();
 
     const login = async () => {
         const userName = document.getElementById('userNameData').value;
@@ -52,7 +54,8 @@ const FirstPage = () => {
 
         const filterData = mydata.filter((e) => e.userName === userName
             && e.userPassword === userPassword);
-        console.log(filterData)
+        filterData.length ? navigate(`/${filterData[0].id}`)
+            : alert("isdifadeçi tapılmadı kışh kışh")
     }
 
     return (

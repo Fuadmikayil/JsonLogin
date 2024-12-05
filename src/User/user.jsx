@@ -13,6 +13,10 @@ const User = () => {
       <div className="create-post">
         <FiPlus className="fi-plus"/>
       </div>
+      <div className="post-text">
+        <textarea name="" id=""></textarea>
+        <button onClick={sendPost} ></button>
+      </div>
     </div>
   );
 };

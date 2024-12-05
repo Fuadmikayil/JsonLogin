@@ -15,4 +15,8 @@
     width: 400px;
     box-shadow:  0 0 10px 1px rgb(220, 219, 219);
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
